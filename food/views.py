@@ -47,6 +47,7 @@ class ItemDeleteView(DeleteView):
     model = Item
     template_name = "food/delete.html"
     success_url = reverse_lazy("food:index")
+    a=b;
 
 
 def less_tha_100(request):
