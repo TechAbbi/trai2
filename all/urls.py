@@ -26,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("food/", include("food.urls")),
     path("api/", include(router.urls)),
+    path("fbv/", include("fbv.urls")),
 ]
