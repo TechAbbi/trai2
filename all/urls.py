@@ -27,4 +27,5 @@ urlpatterns = [
     path("food/", include("food.urls")),
     path("api/", include(router.urls)),
     path("fbv/", include("fbv.urls")),
+    path("cbv/", include("cbv.urls")),
 ]

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "food",
     "rest_framework",
     "fbv",
+    "cbv",
 ]
 
 MIDDLEWARE = [
