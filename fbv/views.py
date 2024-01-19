@@ -31,7 +31,6 @@ def student_details(request, pk):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     else:
-
         if request.method == "GET":
             serializer = StudentSerializer(student)
             return Response(serializer.data)

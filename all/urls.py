@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from food.views import IndexViewSet
+from cbv.views import StudentViewSet
 
+from connectTable import views
 router = routers.DefaultRouter()
 router.register("index", IndexViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +31,5 @@ urlpatterns = [
     path("api/", include(router.urls)),
     path("fbv/", include("fbv.urls")),
     path("cbv/", include("cbv.urls")),
+    path("connect/", views.ConnectTableListView.as_view())
 ]
